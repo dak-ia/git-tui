@@ -1,0 +1,21 @@
+[package]
+name = "git-tui"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.96.1"
+description = "gitをTUIで操作する拡張コマンド群"
+
+[dependencies]
+
+[dev-dependencies]
+
+[lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+# 日本語docコメント内の識別子っぽい単語で誤発火するので抑止
+doc_markdown = "allow"
